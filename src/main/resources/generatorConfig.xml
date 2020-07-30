@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="D:\MyDownloads\Download\springToolSuite\springToolSuite3.9\javaTrain\libs\mysql-connector-java-8.0.19.jar" />
+  <context id="test" >
+    <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/qcj?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useSSL=false" userId="root" password="19990508qcj">
+    	<property name="nullCatalogMeansCurrent" value="true"/>
+    </jdbcConnection>
+    
+    <javaModelGenerator targetPackage="cn.edu.cqupt.myBatis.bean" targetProject="day01_eesy_01jdbc" />
+    <sqlMapGenerator targetPackage="cn.edu.cqupt.myBatis.mapping" targetProject="day01_eesy_01jdbc" />
+    <javaClientGenerator targetPackage="cn.edu.cqupt.myBatis.dao" targetProject="day01_eesy_01jdbc" type="XMLMAPPER" />
+    <table schema="" tableName="users" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+    <table schema="" tableName="teachers" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+    
+  </context>
+</generatorConfiguration>

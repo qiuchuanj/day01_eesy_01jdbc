@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:component-scan base-package="cn.edu.cqupt"></context:component-scan>
+
+
+
+
+    <!--    范围(scope)：sinnal
+                  prototype
+                  requess
+                  session
+                  globlesession-->
+<!--    <bean id="accountService" class="cn.edu.cqupt.service.AccountServiceImpl" >-->
+<!--        <property name="name" value="邱川江"/>-->
+<!--        <property name="age" value="21"/>-->
+<!--        <property name="date" ref="now"/>-->
+<!--    </bean>-->
+<!--    <bean id="now" class="java.util.Date"/>-->
+<!--    <bean id="accountDao" class="cn.edu.cqupt.dao.impl.AccountDaoImpl" />-->
+
+</beans>
